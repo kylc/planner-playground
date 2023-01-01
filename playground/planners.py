@@ -4,7 +4,7 @@ import numpy as np
 import scipy.sparse.csgraph
 from scipy.sparse import csr_matrix
 from scipy.spatial.distance import cdist
-from shapely.geometry import Point, LineString
+from shapely.geometry import LineString, Point
 
 
 def inside_any_polygon(xy, polys):

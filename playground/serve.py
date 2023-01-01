@@ -3,13 +3,12 @@
 from collections import OrderedDict
 
 import numpy as np
+import shapely.affinity
 from bokeh.layouts import column, row
 from bokeh.models import Button, Div, RadioButtonGroup, Slider, Spacer
-from bokeh.plotting import figure, curdoc
-import shapely.affinity
-from shapely.geometry import Polygon
-
+from bokeh.plotting import curdoc, figure
 from planners import prm, prm_star, rrt
+from shapely.geometry import Polygon
 
 
 def random_polygons(xmax, ymax, rmax, N):
